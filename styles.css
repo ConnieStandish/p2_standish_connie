@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display:block;
+}
+
+.desktop-header, .desktop-menu, .author-school {
+	display: none;
+}
+
+h1, h1 a {
+	font-family: 'Goldman', arial, cursive;
+	color: #142056;
+	font-size: 3em;
+}
+
+h2, h3, h4, h5, h6, p, ul, a {
+	font-family: 'Inter', arial, sans-serif;
+	text-decoration: none;
+}
+
+.mobile-header, .genres h2, .featured-reviews h2 {
+  text-align: center;
+  padding: 20px 1%;
+}
+
+/* ***************************** FOR STICKY FOOTER *******************************/
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+/* ***************************** FOR STICKY FOOTER *******************************/
+
+/* *****************************Hamburger Menu Start *******************************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* *****************************Hamburger Menu End*******************************/
+.genres h2 {
+	padding-top: 15px;
+  border-top: solid lightgray 2px;
+  border-bottom: solid lightgray 2px;
+}
+
+.ufo_icon, .dragon_icon, .skull_icon {
+	border-bottom: solid lightgray 2px;
+	display: flex;
+}
+
+.ufo_icon img, .dragon_icon img, .skull_icon img {
+	width: 13%;
+	max-width: 200px;
+	padding: 2%;
+}
+
+.ufo_icon a, .dragon_icon a, .skull_icon a {
+  margin: auto 2%;
+  text-decoration: none;
+  color: #000000;
+}
+
+.featured-reviews img {
+	width: 100%;
+  max-width: 450px;
+}
+
+.bx-wrapper {
+	margin: 0 auto 40px auto;
+	border: none;
+}
+
+.bx-wrapper img {
+	margin: auto;
+}
+
+.page-flex {
+  padding: 25px 7%;
+}
+
+article {
+	padding-bottom: 30px;
+}
+
+article img {
+	display: none;
+}
+
+.menu-pic {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+article h3 {
+  padding: 40px 0 20px;
+}
+
+article ul {
+  margin-left: 5%;
+  width: 100%;
+}
+
+article ul li {
+  padding: 12px 0 5px 0;
+}
+
+article ul li:nth-child(odd) {
+	font-weight: bold;
+}
+
+article ul li:nth-child(even) {
+	margin-left: 10px;
+}
+
+footer {
+  padding: 10px;
+  background-color: #142056;
+  text-align: center;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 5px;
+  font-size: 2em;
+}
+
+footer ul li a {
+	color: #ffffff;
+}
+
+/******************MIN-WIDTH START 620px **************************/
+@media (min-width: 620px) {
+	.desktop-header, .desktop-menu {
+		display: block;
+		text-align: center;
+	}
+
+	.desktop-header {
+		padding: 20px 0;
+	}
+
+	.desktop-menu ul {
+		list-style-type: none;
+    padding: 20px 0;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+	}
+
+	.desktop-menu ul li {
+		display: inline;
+		padding: 0 5%;
+	}
+
+	.desktop-menu ul li a {
+		text-decoration: none;
+		color: #000000;
+		font-weight: bold;
+	}
+
+	.desktop-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+	.mobile-header, .menu, .hamburger, .cross {
+		display: none;
+	}
+
+	.genres {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		text-align: center;
+		padding-top: 32px;
+	}
+
+	.genres p, .genres h2 {
+		display: none;
+	}
+
+	.ufo_icon, .dragon_icon, .skull_icon {
+    align-content: space-between;
+    margin: 0 3%;
+}
+
+	.ufo_icon img, .dragon_icon img, .skull_icon img {
+		flex-grow: 2;
+		margin: auto;
+	}
+
+	.ufo_icon, .dragon_icon, .skull_icon {
+		border-bottom: none;
+}
+
+	.menu-page-head {
+	  border-bottom: black solid 2px;
+	  width: 85%;
+	  padding: 30px 0 10px 0;
+	}
+
+	.featured-reviews img {
+	  width: 280px;
+	}
+
+	.menu-pic {
+		display: block;
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto;
+		padding: 115px 0 30px 0;
+	}
+
+}
+/******************MIN-WIDTH END 620px **************************/
+
+
+/******************MIN-WIDTH START 720px **************************/
+@media (min-width: 720px) {
+
+	footer ul li {
+    font-size: 1.5em;
+	}
+
+	.author-school {
+    display: block;
+    color: #ffffff;
+		padding-top: 5px;
+}
+
+	.footer-elements {
+		display: flex;
+		justify-content: space-between;
+}
+
+}
+/******************MIN-WIDTH END 720px **************************/
+
+/******************MIN-WIDTH START 816px **************************/
+@media (min-width: 816px) {
+
+	.flex-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+	.page-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+}
+
+/******************MIN-WIDTH END 816px **************************/
+
+
+/******************MIN-WIDTH START 1040px **************************/
+@media (min-width: 1040px) {
+	.frame {
+		background-color: #b0b0b0;
+	  padding: 55px 3% 0;
+	}
+
+	header, main {
+		background-color: #ffffff
+	}
+
+	article img {
+		width: 100%;
+		max-width: 50px;
+		margin: 30px 20px -13px -65px;
+}
+
+	article img, article h3 {
+		display: inline;
+}
+
+}
+/******************MIN-WIDTH END 1040px **************************/
