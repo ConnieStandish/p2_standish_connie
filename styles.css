@@ -118,6 +118,10 @@ h2, h3, h4, h5, h6, p, ul, a {
 	margin: auto;
 }
 
+.about p {
+  padding-top: 3%;
+}
+
 .page-flex {
   padding: 25px 7%;
 }
@@ -239,7 +243,7 @@ footer ul li a {
 		border-bottom: none;
 }
 
-	.menu-page-head {
+	.page-head {
 	  border-bottom: black solid 2px;
 	  width: 85%;
 	  padding: 30px 0 10px 0;
@@ -249,7 +253,7 @@ footer ul li a {
 	  width: 280px;
 	}
 
-	.menu-pic, .about-pic {
+	.menu-pic {
 		display: block;
 		width: 100%;
 		max-width: 450px;
@@ -257,12 +261,23 @@ footer ul li a {
 		padding: 115px 0 30px 0;
 	}
 
+	.about-pic {
+    display: block;
+    width: 100%;
+    max-width: 25%;
+    margin: 0 auto;
+}
+
 }
 /******************MIN-WIDTH END 620px **************************/
 
 
 /******************MIN-WIDTH START 720px **************************/
 @media (min-width: 720px) {
+
+	.about {
+		max-width: 725px;
+	}
 
 	footer ul li {
     font-size: 1.5em;
@@ -285,7 +300,7 @@ footer ul li a {
 /******************MIN-WIDTH START 816px **************************/
 @media (min-width: 816px) {
 
-	.flex-menu {
+	.flex-menu, .about-flex {
     display: flex;
     flex-direction: column;
 }
@@ -295,6 +310,19 @@ footer ul li a {
     align-items: flex-start;
     justify-content: space-around;
 }
+
+.about-flex {
+    margin: 50px auto;
+}
+
+.about-pic {
+    padding-top: 90px;
+    padding-left: 3%;
+}
+
+/* .about-flex, .about-pic {
+    margin-top: 50px;
+} */
 
 }
 
