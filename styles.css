@@ -130,7 +130,7 @@ article img {
 	display: none;
 }
 
-.menu-pic {
+.menu-pic, .about-pic {
 	display: none;
 }
 
@@ -249,7 +249,7 @@ footer ul li a {
 	  width: 280px;
 	}
 
-	.menu-pic {
+	.menu-pic, .about-pic {
 		display: block;
 		width: 100%;
 		max-width: 450px;
