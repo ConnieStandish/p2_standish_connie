@@ -18,7 +18,7 @@ h1, h1 a {
 	font-size: 3em;
 }
 
-h2, h3, h4, h5, h6, p, ul, a {
+h2, h3, h4, h5, h6, p, ul, a, figcaption {
 	font-family: 'Inter', arial, sans-serif;
 	text-decoration: none;
 }
@@ -161,6 +161,49 @@ article ul li:nth-child(odd) {
 
 article ul li:nth-child(even) {
 	margin-left: 10px;
+}
+
+.author:after {
+  content: "";
+  display: block;
+  padding-top: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.review p {
+    padding: 3% 0;
+}
+
+.cover img {
+	width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+		margin: 20px 0;
+}
+
+.buttons a {
+	background-color: blue;
+}
+
+.buttons a {
+    background-color: #142056;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 footer {
@@ -318,6 +361,20 @@ footer ul li a {
 .about-pic {
     padding-top: 90px;
     padding-left: 3%;
+}
+
+.review-flex {
+	display: flex;
+}
+
+figure.cover {
+    display: flex;
+    flex-direction: column;
+}
+
+.cover img {
+	max-width: 100%;
+	width: 50%;
 }
 
 /* .about-flex, .about-pic {
