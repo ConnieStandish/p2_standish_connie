@@ -186,6 +186,14 @@ article ul li:nth-child(even) {
 	max-width: 100%;
 }
 
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+  font-family: 'Inter', sans-serif;
+}
+
 figcaption {
     font-style: italic;
     font-size: 0.9em;
