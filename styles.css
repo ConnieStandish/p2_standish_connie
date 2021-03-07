@@ -163,6 +163,10 @@ article ul li:nth-child(even) {
 	margin-left: 10px;
 }
 
+.title-author {
+    padding: 0 3%;
+}
+
 .author:after {
   content: "";
   display: block;
@@ -175,11 +179,11 @@ article ul li:nth-child(even) {
 }
 
 .review p {
-    padding: 3% 0;
+    padding: 10px 3%;
 }
 
 .cover img {
-	width: 100%;
+	max-width: 100%;
 }
 
 figcaption {
@@ -190,7 +194,7 @@ figcaption {
 
 .buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 		margin: 20px 0;
 }
 
@@ -204,6 +208,7 @@ figcaption {
     padding: 2%;
     border-radius: 10px;
     font-weight: bold;
+		text-align: center;
 }
 
 footer {
@@ -222,6 +227,18 @@ footer ul li {
 footer ul li a {
 	color: #ffffff;
 }
+
+/******************MIN-WIDTH START 420px **************************/
+@media (min-width: 420px) {
+
+	.cover {
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+/******************MIN-WIDTH END 420px **************************/
 
 /******************MIN-WIDTH START 620px **************************/
 @media (min-width: 620px) {
@@ -311,6 +328,10 @@ footer ul li a {
     margin: 0 auto;
 }
 
+.title-author {
+    padding-top: 20px;
+}
+
 }
 /******************MIN-WIDTH END 620px **************************/
 
@@ -365,17 +386,34 @@ footer ul li a {
 
 .review-flex {
 	display: flex;
+	flex-wrap: wrap;
 }
 
-figure.cover {
-    display: flex;
+.review {
+ width: 50%;
+}
+
+.cover {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+.review-flex {
+    justify-content: center;
+}
+
+.buttons {
     flex-direction: column;
+    width: 40%;
+    margin: 10px auto;
 }
 
-.cover img {
-	max-width: 100%;
-	width: 50%;
+.buttons a {
+    margin: 10px;
+		padding: 4%;
 }
+
 
 /* .about-flex, .about-pic {
     margin-top: 50px;
@@ -406,6 +444,7 @@ figure.cover {
 	article img, article h3 {
 		display: inline;
 }
+
 
 }
 /******************MIN-WIDTH END 1040px **************************/
