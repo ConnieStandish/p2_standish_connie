@@ -153,6 +153,7 @@ article ul {
 
 article ul li {
   padding: 12px 0 5px 0;
+	color:  #000000;
 }
 
 article ul li:nth-child(odd) {
