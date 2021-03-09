@@ -253,8 +253,8 @@ label {
 }
 
 aside {
-    padding: 20px 4%;
-    margin-top: 30px;
+    padding: 20px 1%;
+    margin-top: 62px;
     border: solid black 2px;
     border-radius: 10px;
 }
@@ -262,7 +262,7 @@ aside {
 .media {
   display: flex;
   align-items: flex-start;
-	padding: 10px 4%;
+	padding: 10px 2%;
 }
 
 .media-figure {
@@ -399,7 +399,7 @@ footer ul li a {
 }
 
 .contactform {
-	max-width: 650px;
+		max-width: 650px;
 }
 
 }
@@ -484,6 +484,10 @@ footer ul li a {
 		padding: 4%;
 }
 
+.contact {
+    display: flex;
+		justify-content: space-evenly;
+}
 
 /* .about-flex, .about-pic {
     margin-top: 50px;
