@@ -252,6 +252,31 @@ label {
     display: inline;
 }
 
+aside {
+    padding: 20px 4%;
+    margin-top: 30px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+	padding: 10px 4%;
+}
+
+.media-figure {
+  margin-right: 1em;
+}
+
+.media-body {
+  flex: 1;
+}
+
+.followhead {
+  padding-bottom: 20px;
+}
+
 footer {
   padding: 10px;
   background-color: #142056;
@@ -371,6 +396,10 @@ footer ul li a {
 
 .title-author {
     padding-top: 20px;
+}
+
+.contactform {
+	max-width: 650px;
 }
 
 }
