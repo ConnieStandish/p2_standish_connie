@@ -59,31 +59,33 @@
 		<main class="site-content">
 
 			<section class="emailsection">
-        <h2 class="emailme">Email Me</h2>
-        <form class="emailform" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
-          <div class="first-name input-section">
-            <label for="firstname" class="label_input_wrap">First Name:</label>
-            <input type="text" name="req_firstname" id="firstname" placeholder="Joe" />
-          </div>
-          <div class="last-name input-section">
-            <label for="lastname" class="label_input_wrap">Last Name:</label>
-            <input type="text" name="req_lastname" id="lastname" placeholder="Smith" />
-          </div>
-          <div class="email input-section">
-            <label for="email" class="label_input_wrap">Email:</label>
-            <input type="email" name="req_email" id="email" placeholder="jsmith@example.com" />
-          </div>
-          <div class="comments input-section">
-            <label for="comments" class="label_input_wrap">Comments, Questions, & Recommendations:</label>
-            <textarea name="comments" id="comments" rows="8" cols="60" placeholder="What should I read next? Leave a comment!"></textarea>
-          </div>
-          <div class="submit">
-            <input type="submit" value="Send" />
-          </div>
-          <div class="reset">
-            <input type="reset" value="Refresh" />
-          </div>
-        </form>
+        <h2 class="emailhead">Email Me</h2>
+
+        <form class="contactform"name="firstform" method="POST" action= >
+					<div class="first-name">
+						<label for="firstname" class="label_input_wrap">First Name:</label>
+						<input type="text" name="firstname" id="firstname" placeholder="Jane"/>
+					</div>
+					<div class="last-name">
+						<label for="lastname" class="label_input_wrap">Last Name:</label>
+						<input type="text" name="lastname" id="lastname" placeholder="Doe"/>
+					</div>
+					<div class="email">
+						<label for="email" class="label_input_wrap">Email:</label>
+						<input type="email" name="email" id="email" placeholder="jdoe@example.com"/>
+					</div>
+					<div class="comments">
+						<label for="comments" class="label_input_wrap">Your Message:</label>
+						<textarea name="comments" id="comments" cols="55" rows="5" placeholder="Type your message here!"></textarea>
+					</div>
+					<div class="submit">
+						<input type="submit" value="Send"/>
+					</div>
+					<div class="reset">
+						<input type="reset" value="Refresh"/>
+					</div>
+				</form>
+
       </section>
 
 		</main>
