@@ -90,10 +90,11 @@ h2, h3, h4, h5, h6, p, ul, a, figcaption {
 .ufo_icon, .dragon_icon, .skull_icon {
 	border-bottom: solid lightgray 2px;
 	display: flex;
+	align-items: center;
 }
 
 .ufo_icon img, .dragon_icon img, .skull_icon img {
-	width: 13%;
+	width: 60%;
 	max-width: 200px;
 	padding: 2%;
 }
@@ -331,6 +332,22 @@ footer ul li a {
 }
 
 /******************MIN-WIDTH END 420px **************************/
+
+/******************MAX-WIDTH START 620px **************************/
+@media (max-width: 620px) {
+
+.flex-left {
+	width: 16%;
+	padding-left: 4%;
+}
+
+.flex-right {
+	width: 40%;
+}
+
+}
+
+/******************MIN-WIDTH END 620px **************************/
 
 /******************MIN-WIDTH START 620px **************************/
 @media (min-width: 620px) {
