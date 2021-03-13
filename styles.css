@@ -100,8 +100,8 @@ h2, h3, h4, h5, h6, p, ul, a, figcaption {
 
 .ufo_icon a, .dragon_icon a, .skull_icon a {
   margin: auto 2%;
-  text-decoration: none;
-  color: #000000;
+  /* text-decoration: none;
+  color: #000000; */
 }
 
 .featured-reviews img {
@@ -362,6 +362,7 @@ footer ul li a {
 }
 
 	.ufo_icon img, .dragon_icon img, .skull_icon img {
+		width: 100%;
 		flex-grow: 2;
 		margin: auto;
 	}
