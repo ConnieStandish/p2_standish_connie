@@ -98,10 +98,9 @@ h2, h3, h4, h5, h6, p, ul, a, figcaption {
 	padding: 2%;
 }
 
-.ufo_icon a, .dragon_icon a, .skull_icon a {
+.ufo_icon p, .dragon_icon p, .skull_icon p {
   margin: auto 2%;
-  /* text-decoration: none;
-  color: #000000; */
+  color: #000000;
 }
 
 .featured-reviews img {
