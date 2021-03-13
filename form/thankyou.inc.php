@@ -29,6 +29,15 @@ h2, h3, h4, h5, h6, p, ul, a, figcaption {
   padding: 20px 1%;
 }
 
+.confirm h2 {
+    padding: 20px 5px;
+    margin: 0 10px;
+}
+
+.confirm p {
+    margin: 10px 0;
+    padding: 15px;
+}
 /* ***************************** FOR STICKY FOOTER *******************************/
 .site {
   display: flex;
@@ -100,6 +109,90 @@ footer ul li a {
 	color: #ffffff;
 }
 
+/******************MIN-WIDTH START 620px **************************/
+@media (min-width: 620px) {
+	.desktop-header, .desktop-menu {
+		display: block;
+		text-align: center;
+	}
+
+	.desktop-header {
+		padding: 20px 0;
+	}
+
+	.desktop-menu ul {
+		list-style-type: none;
+    padding: 20px 0;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+	}
+
+	.desktop-menu ul li {
+		display: inline;
+		padding: 0 5%;
+	}
+
+	.desktop-menu ul li a {
+		text-decoration: none;
+		color: #000000;
+		font-weight: bold;
+	}
+
+	.desktop-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+	.mobile-header, .menu, .hamburger, .cross {
+		display: none;
+	}
+
+	.confirm h2 {
+    border-bottom: solid black 1px;
+    max-width: 670px;
+    margin-left: 20px;
+    padding: 20px 0;
+}
+
+.confirm p {
+    margin-left: 5px;
+}
+
+}
+/******************MIN-WIDTH END 620px **************************/
+
+/******************MIN-WIDTH START 720px **************************/
+@media (min-width: 720px) {
+
+	footer ul li {
+    font-size: 1.5em;
+	}
+
+	.author-school {
+    display: block;
+    color: #ffffff;
+		padding-top: 5px;
+}
+
+	.footer-elements {
+		display: flex;
+		justify-content: space-between;
+}
+
+}
+/******************MIN-WIDTH END 720px **************************/
+
+/******************MIN-WIDTH START 1040px **************************/
+@media (min-width: 1040px) {
+	.frame {
+		background-color: #b0b0b0;
+	  padding: 55px 3% 0;
+	}
+
+	header, main {
+		background-color: #ffffff
+	}
+}
+/******************MIN-WIDTH END 1040px **************************/
 </style>
 
 <!--- Google Fonts --->
@@ -142,9 +235,9 @@ footer ul li a {
 			</nav>
 		</header>
 
-    <main>
+    <main class="site-content">
       <section>
-        <div>
+        <div class="confirm">
           <h2>Thank you for your enquiry</h2>
           <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
           <p>Form processor provided by <a href="http://www.inventpartners.com">Invent Partners web design York</a>.</p>
