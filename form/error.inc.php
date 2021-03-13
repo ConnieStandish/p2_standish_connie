@@ -38,6 +38,10 @@ h2, h3, h4, h5, h6, p, ul, a, figcaption {
     margin: 10px 0;
     padding: 15px;
 }
+
+.missing {
+  display: none;
+}
 /* ***************************** FOR STICKY FOOTER *******************************/
 .site {
   display: flex;
@@ -246,7 +250,7 @@ footer ul li a {
       </section>
 
       <section>
-        <ul>
+        <ul class="missing">
         <?php
         	for($i=0; $i<count($this->missing_required_fields); $i++){
         		echo "<li>" . $this->missing_required_fields[$i]['title'] . "</li>\n";
