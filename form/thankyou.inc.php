@@ -1,175 +1,171 @@
 <style type="text/css">
-{
- margin: 0;
- padding: 0;
- border: 0;
-}
-/*=======================
-Navigation Styling
-========================*/
-h1 {
- font-size: 65px;
- font-family: 'Goldman', cursive;
- text-align: center;
- color: #0f1635;
- padding: 25px;
- text-shadow: 2px 1px lightslategrey;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-h1 a {
- text-decoration: none;
- color: #0f1635;
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display:block;
 }
 
-nav ul {
- position: relative;
- left: 76px;
- border-top: 2px solid #454545;;
- border-bottom: 2px solid #454545;;
- max-width: 80%;
- padding: 10px;
- margin: 0 97px;
+.desktop-header, .desktop-menu, .author-school {
+	display: none;
 }
 
-nav ul li {
- display: inline;
- position: relative;
- left: 415px;
- font-family: 'Inter', serif;
- font-weight: 600;
- font-size: 28px;
- padding: 10px 20px;
+h1, h1 a {
+	font-family: 'Goldman', arial, cursive;
+	color: #142056;
+	font-size: 3em;
 }
 
-nav ul li a {
- text-decoration: none;
- color: #191817;
- padding: 0 110px;
- transition: .3s;
+h2, h3, h4, h5, h6, p, ul, a, figcaption {
+	font-family: 'Inter', arial, sans-serif;
+	text-decoration: none;
 }
 
-nav ul li a:hover {
- color: #4f4e4e;
- transition: .3s;
-}
-/*=======================
-Social Media Links
-========================*/
-.social-media {
- position: absolute;
- top: 2%;
- left: 82%;
- font-size: 30px;
- max-width: 80%;
- word-spacing: 7px;
-}
-
-.social-media a {
- text-decoration: none;
- color: black;
-}
-
-.social-media a:visited {
- color: #093eb1;
-}
-/*=======================
-Footer
-========================*/
-footer {
-  font-family: 'Inter', sans-serif;
-  margin: 0 auto;
-  padding-top: 295px;
-  font-size: 14px;
-  color: white;
-}
-
-footer p {
-  background: #0f1635;
-  padding: 19px 0;
+.mobile-header, .genres h2, .featured-reviews h2 {
   text-align: center;
-  position: absolute;
-  max-width: 1920px;
-  height: 15px;
-  left: 0;
-  right: 0;
+  padding: 20px 1%;
 }
 
-.container {
-  font-size: 16px;
-  font-family: 'Inter', sans-serif;
-  max-width: 53%;
-  margin: 80px 0 0 172px;
+/* ***************************** FOR STICKY FOOTER *******************************/
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.contact {
-  height: 256px;
+.site-content {
+  flex: 1;
+}
+/* ***************************** FOR STICKY FOOTER *******************************/
+
+/* *****************************Hamburger Menu Start *******************************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/* *****************************Hamburger Menu End*******************************/
+
+footer {
+  padding: 10px;
+  background-color: #142056;
+  text-align: center;
 }
 
-.thankyou {
-  color: #454545;
-  font-weight: 500;
-  font-size: 26px;
+footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 5px;
+  font-size: 2em;
 }
 
-.thankyou:after {
-  content: "";
-  display: block;
-  width: 65%;
-  padding-top: 20px;
-  border-bottom: 2px solid #454545;
+footer ul li a {
+	color: #ffffff;
 }
 
-.container p {
-  padding: 12px;
-  line-height: 25px;
-  margin-left: 10px;
-  color: #000000;
-}
 </style>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH34RWENCH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!--- Google Fonts --->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman&family=Inter&display=swap" rel="stylesheet">
 
-    gtag('config', 'G-RH34RWENCH');
-  </script>
+<!--- FontAwesome --->
+<script src="https://kit.fontawesome.com/4f19959d2d.js" crossorigin="anonymous"></script>
 
-  <!--- FontAwesome --->
-  <script src="https://kit.fontawesome.com/4f19959d2d.js" crossorigin="anonymous"></script>
-
-  <!--- Google Fonts --->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <body>
-  <header>
-    <h1><a href="index.html">S.F.H Reviews</a></h1>
-    <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body class="site frame">
 
-  <section class="social-media">
-    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i></a>
-  </section>
+		<header>
 
-<div class="container contact">
-  <h2 class="thankyou">Thank you for your enquiry</h2>
-  <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
-  <p>Form processor provided by <a href="http://www.inventpartners.com">Invent Partners web design York</a>.</p>
-</div>
+			<button class="hamburger">&#9776;</button>
+  		<button class="cross">&#735;</button>
 
-<footer>
-  <p>Website Created By: Connie Standish | University of Florida</p>
-</footer>
+			<!-- Mobile View -->
+			<h1 class="mobile-header">S.F.H</h1>
 
-</body>
+			<nav class="menu">
+			  <ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="contact.html">Contact</a></li>
+			  </ul>
+			</nav>
+
+			<!-- Desktop View -->
+			<a href="index.html"><h1 class="desktop-header">S.F.H Reviews</h1></a>
+
+			<nav class="desktop-menu">
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="menu.html">Menu</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+    <main>
+      <section>
+        <div>
+          <h2>Thank you for your enquiry</h2>
+          <p>Thanks for your interest. we have received your message, and we will be in touch shortly.</p>
+          <p>Form processor provided by <a href="http://www.inventpartners.com">Invent Partners web design York</a>.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+      <div class="footer-elements">
+        <p class="author-school">Created By: Connie Standish | University of Florida</p>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i></a></li>
+        </ul>
+      </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+
+    </body>
