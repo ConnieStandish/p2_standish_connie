@@ -21,6 +21,7 @@ h1, h1 a {
 h2, h3, h4, h5, h6, p, ul, a, figcaption {
 	font-family: 'Inter', arial, sans-serif;
 	text-decoration: none;
+	color: #000000;
 }
 
 .hidden {
@@ -418,8 +419,6 @@ footer ul li a {
 }
 
 	.page-head {
-	  border-bottom: black solid 2px;
-	  width: 85%;
 	  padding: 30px 0 10px 0;
 	}
 
@@ -493,18 +492,28 @@ footer ul li a {
     justify-content: space-around;
 }
 
+.page-head {
+	border-bottom: black solid 1px;
+	max-width: 500px;
+}
+
+article ul li a:hover {
+    text-decoration: underline;
+}
+
 .about-flex {
     margin: 50px auto;
 }
 
 .about-pic {
-    padding-top: 90px;
-    padding-left: 3%;
+    padding-top: 150px;
+    margin-left: 3%;
 }
 
 .review-flex {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .review {
@@ -515,10 +524,6 @@ footer ul li a {
     width: 50%;
     margin: 0 auto;
     padding-top: 85px;
-}
-
-.review-flex {
-    justify-content: center;
 }
 
 .buttons {
@@ -576,6 +581,14 @@ aside {
 		background-color: #ffffff
 	}
 
+	.flex-menu article {
+    margin-left: 15%;
+}
+
+.about-pic {
+    padding-top: 95px;
+}
+
 	article img {
 		width: 100%;
 		max-width: 50px;
@@ -584,6 +597,18 @@ aside {
 
 	article img, article h3 {
 		display: inline;
+}
+
+.review-flex {
+	margin-top: 30px;
+}
+
+.buttons a:hover {
+	background-color: #093eb1;
+}
+
+.contact-buttons input:hover {
+    background-color: #093eb1;
 }
 
 aside {
