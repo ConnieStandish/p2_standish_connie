@@ -23,6 +23,10 @@ h2, h3, h4, h5, h6, p, ul, a, figcaption {
 	text-decoration: none;
 }
 
+.hidden {
+	display: none;
+}
+
 .mobile-header, .genres h2, .featured-reviews h2 {
   text-align: center;
   padding: 20px 1%;
