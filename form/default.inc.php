@@ -213,7 +213,7 @@ footer ul li a {
   		<button class="cross">&#735;</button>
 
 			<!-- Mobile View -->
-			<h1 class="mobile-header">S.F.H</h1>
+			<a href="index.html"><h1 class="mobile-header">S.F.H</h1></a>
 
 			<nav class="menu">
 			  <ul>
