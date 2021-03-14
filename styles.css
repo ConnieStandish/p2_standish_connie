@@ -605,5 +605,9 @@ aside {
 		box-shadow: #9e9e9e 7px -1px 9px 6px;
 	}
 
+	aside p:hover {
+		text-decoration: underline;
+	}
+
 }
 /******************MIN-WIDTH END 1040px **************************/
