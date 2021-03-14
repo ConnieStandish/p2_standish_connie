@@ -204,60 +204,59 @@ footer ul li a {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<body>
-  <body class="site frame">
+<body class="site frame">
 
-		<header>
+	<header>
 
-			<button class="hamburger">&#9776;</button>
-  		<button class="cross">&#735;</button>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
 
-			<!-- Mobile View -->
-			<a href="index.html"><h1 class="mobile-header">S.F.H</h1></a>
+		<!-- Mobile View -->
+		<a href="index.html"><h1 class="mobile-header">S.F.H</h1></a>
 
-			<nav class="menu">
-			  <ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="menu.html">Menu</a></li>
-					<li><a href="contact.html">Contact</a></li>
-			  </ul>
-			</nav>
+		<nav class="menu">
+		  <ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</nav>
 
-			<!-- Desktop View -->
-			<a href="index.html"><h1 class="desktop-header">S.F.H Reviews</h1></a>
+		<!-- Desktop View -->
+		<a href="index.html"><h1 class="desktop-header">S.F.H Reviews</h1></a>
 
-			<nav class="desktop-menu">
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="menu.html">Menu</a></li>
-	        <li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+		<nav class="desktop-menu">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <main class="site-content">
-      <section>
-        <div class="confirm">
-          <h2 class="thankyou">Oops</h2>
-          <p>Something went wrong, please try again.</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-
-      <div class="footer-elements">
-        <p class="author-school">Created By: Connie Standish | University of Florida</p>
-        <ul class="social-media">
-          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i></a></li>
-        </ul>
+  <main class="site-content">
+    <section>
+      <div class="confirm">
+        <h2 class="thankyou">Oops</h2>
+        <p>Something went wrong, please try again.</p>
       </div>
+    </section>
+  </main>
 
-    </footer>
+  <footer>
 
-    <script src="js/hamburger.js"></script>
+    <div class="footer-elements">
+      <p class="author-school">Created By: Connie Standish | University of Florida</p>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i></a></li>
+      </ul>
+    </div>
 
-    </body>
+  </footer>
+
+  <script src="js/hamburger.js"></script>
+
+</body>

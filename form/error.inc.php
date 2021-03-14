@@ -209,7 +209,6 @@ footer ul li a {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<body>
   <body class="site frame">
 
 		<header>
@@ -276,4 +275,4 @@ footer ul li a {
 
     <script src="js/hamburger.js"></script>
 
-    </body>
+  </body>
